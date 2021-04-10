@@ -1,0 +1,23 @@
+Obedient Cat:       Download and copy-paste the flag in the txt file.
+
+Mod 26:             Copy the given cyphertext, Create a python file:
+                          import codecs
+                          print(codecs.encode("given string", "rot_13"))
+                    Run file
+                    Output: {required_flag}.
+
+Python Wrangling:   Copy password from pw.txt
+                    In terminal, do:
+                        $ py ende.py -d flag.txt.en 
+                        Please enter the password:{enter_password_from_pw.txt}
+                        {required_flag}
+
+Wave a Flag:        Download file.
+                    By
+                        $ file (filename)
+                    we know that it is an ELF exeutable. So, give it execution permissions adn run it.
+                        $ ./(filename)
+                        Hello user! Pass me a -h to learn what I can do!
+                    We give it what it wishes for!
+                        # ./(fileneame) -h      # -h stands for help. For any binary in linux you can find a small version of its instruction manual using this.
+                        Oh, help? I actually don't do much, but I do have this flag here: {required_flag}
