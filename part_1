@@ -56,3 +56,20 @@ Magikarp Ground Mission:
 Lets Warm Up:       Hexadecimal 0x70 corresponds to the letter 'p'. So,
                     {required_flag} = picoCTF{p}
                     
+Warmed Up:          Hexadecimal 0x3D corresponds to the decimal 61. So,
+                    {required_flag} = picoCTF{61}
+
+2 Warm:             integer 42 corresponds to the binary 101010. So,
+                    {required_flag} = picoCTF{101010}
+
+Tab, Tab, Attack:   Download zip file
+                    Unzip using:
+                        $ unzip (file)
+                    Recursively do:
+                        $ cd *                                           # * means all characters, so if there is a directory named github then I can access it using $cd g*b (only is there are no other repositories which start with g and end with b)
+                    Until you reach the last file, which is an ELF.
+                        $ ./*
+                    You will get the {required_flag}
+
+
+                        
