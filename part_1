@@ -38,5 +38,21 @@ Nice  netcat...:    Use the given code snippet. Here, it runs netcat (nc) to acc
                                                                         # ''.join() joins all converted elements into a string
                         print ("Resultant string", str(res))            # Printing final string, which contains the {required_flag}
 
+Transformation:     Is is to is UTF-16BE? Not Known. Explanations and step by step procedures appreciated.
 
-                        
+
+Magikarp Ground Mission: 
+                    Start instance and copy-paste connection info to terminal
+                    Type passsword when asked.
+                    When you see a .txt file by the name of {num}of3.flag.txt, 
+                        $ cat {num}of3.flag.txt                          # cat prints the content of file in the terminal. Also, use tabs for automatic command completion.
+                    Copy the output
+                    Follow instructions.
+                        $ cat __                                         # prints content
+                        $ cd __                                          # change directory
+                    If you are unsire about the type of any file do:
+                        $ file __                                        # output file metadata
+
+Lets Warm Up:       Hexadecimal 0x70 corresponds to the letter 'p'. So,
+                    {required_flag} = picoCTF{p}
+                    
