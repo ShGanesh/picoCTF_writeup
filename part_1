@@ -68,8 +68,24 @@ Tab, Tab, Attack:   Download zip file
                     Recursively do:
                         $ cd *                                           # * means all characters, so if there is a directory named github then I can access it using $cd g*b (only is there are no other repositories which start with g and end with b)
                     Until you reach the last file, which is an ELF.
-                        $ ./*
+                        $ ./*                                            # * is a bash wildcard. Also, read about regex its pretty interesting.
                     You will get the {required_flag}
 
+strings it:         File is an EOF, and if we cat its contents it will blow up the terminal # if terminal blows up use ctrl+c and then the command clear.
+                    In hints it tells us about the command 'strings', which prints all printable strings (character sequences) in the cat of that file.
+                        $ strings {filename}
+                    It will print too many strings one by one. Here, command 'grep' can be used to find stuff.
+                        $ strings {filename} | grep picoCTF              # | means piping: where the returned value of the first command can be 'piped' into the second command as an input.
+                        picoCTF{required_flag}                           # We grepped picoCTF because we know tat the flag starts with picoCTF
 
+Bases:              Online decode from base64
+                    You will get your {required_flag}
+
+First Grep:         Download file,
+                        $ cat {filename} | grep picoCTF
+                        {required_flag}
+
+
+
+                    
                         
