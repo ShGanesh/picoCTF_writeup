@@ -21,3 +21,22 @@ Wave a Flag:        Download file.
                     We give it what it wishes for!
                         # ./(fileneame) -h      # -h stands for help. For any binary in linux you can find a small version of its instruction manual using this.
                         Oh, help? I actually don't do much, but I do have this flag here: {required_flag}
+
+information:        Download the .jpg
+                    We need to first access its metadata to snif for interesting information. Go to exifinfo.org or metadata2go.com and upload the file.
+                    Hmm the license looks kinda fishy... It looks like base64.
+                    Go to any online decoder and paste the so-called license number. You will get the {required_flag}
+
+Nice  netcat...:    Use the given code snippet. Here, it runs netcat (nc) to access the website (mercury.picoctf.net) on port number (whatever number)
+                    The output will seemingly be a column of numbers. Copy the numbers into a new textfile using:
+                        $ (netcat code) > (filename).txt        # The > operator dumps output from the left hand side into the right. If the named file does not exist, a new empty file is created.
+                    We then create a new python file in the same dorectory as that of the above (filename).txt:
+                        a_file = open("(filename).txt")                 # opens (filename).txt that was present in the same directory as this .py is    
+                        content = tuple(a_file.read().split("\n"))      # splits the content around "\n" (newline) and adds the split content into a tuple
+                        res = ''.join(map(chr, map(int, content[:-1]))) # map(int, x) converts all elements of tuple into int (except the last one which was a whitespace)
+                                                                        # map(chr,x) converts the integer elements into text
+                                                                        # ''.join() joins all converted elements into a string
+                        print ("Resultant string", str(res))            # Printing final string, which contains the {required_flag}
+
+
+                        
