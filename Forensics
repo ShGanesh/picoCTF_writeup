@@ -1,0 +1,4 @@
+information:        Download the .jpg
+                    We need to first access its metadata to snif for interesting information. Go to exifinfo.org or metadata2go.com and upload the file.
+                    Hmm the license looks kinda fishy... It looks like base64.
+                    Go to any online decoder and paste the so-called license number. You will get the {required_flag}
