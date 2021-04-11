@@ -98,5 +98,13 @@ mus1c:              The text given is weird lyrics. In the hint it says: "Do you
                     Go to your favourite web browser and go to any online rockstar interpreter and paste the lyrics in it. It will output many numbers line by line.
                     Since we can observe that such numbers look line octals, write a code to convert octals to text and you will get your {required_flag}.
 
-
+flag_shop:          On studying the source we can see that acount_balance is a small number. And, in line 42 there is no condition where the case of total cost > account_balance.
+                    So it can be inferred that the balance can go into negative numbers.
+                    But, since account_balance is a small number, if we subract sufficiently large numbers (900*number_flags) from it it will overflow and display a positive number. 
+                    Process:
+                        Go to 1. Defintely not the flag Flag menu
+                        Buy a verry large number (I used 23472156)
+                            The final cost is: -349896080
+                            Your current balance after transaction: 349897180
+                    Now you can buy the 1337 flag!!!                       # 1337 corresponds to leet, which can mean elite. Comeon leetcode, anyone?
                         
