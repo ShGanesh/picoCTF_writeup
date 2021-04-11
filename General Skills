@@ -108,3 +108,30 @@ flag_shop:          On studying the source we can see that acount_balance is a s
                             Your current balance after transaction: 349897180
                     Now you can buy the 1337 flag!!!                       # 1337 corresponds to leet, which can mean elite. Comeon leetcode, anyone?
                         
+1_wanna_b3_a_r0ck5tar:
+                    Since this is the rockstar language it will be straightforward if you take time to understand it. Else, u can convert (transpile) it to a known language for easy comprehension.
+                    Visit https://codewithrockstar.com/code and install whichever is easy for you. I installed rockstar-py.
+                    Transpile the code and study it.
+                    We can see that to reach the important chunk of code, we have to input 2 values (2 input()) and pass through two if statements.
+                    One way to get the answer is to modify the rockstar code itself. Else we follow the code and beat it in its own turf!!!
+                    The initialized values:
+                        rockstar: Rocknroll is right                        python  : Rocknroll = True       
+                        rockstar: Silence is wrong                          python  : Silence = False       
+                        rockstar: A guitar is a six-string                  python  : a_guitar = 10
+                        rockstar: Tommy's been down                         python  : Tommy = 44
+                        rockstar: Music is a billboard-burning razzmatazz!  python  : Music = 170
+                    We can see that the parts of importance are:
+                        rockstar: Listen to the music                       python  : the_music = input()
+                        rockstar: If the music is a guitar                  python  : if the_music == a_guitar:
+                    and, 
+                        rockstar: Listen to the rhythm                      python  : the_rhythm = input()
+                        rockstar: If the rhythm without Music is nothing    python  : if the_rhythm - Music == False:
+                    Clearly, we have to equate the_music == a_guitar and the_rhythm - Music == 0.
+                    Procedure:
+                        Go to https://codewithrockstar.com/online, paste the code and in input type:
+                            10
+                            170
+                    A column of numbers will appear which look like ASCII values.
+                    Convert ASCII values to simpletext
+                    
+                    
