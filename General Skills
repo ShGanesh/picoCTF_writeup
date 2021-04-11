@@ -45,8 +45,10 @@ Lets Warm Up:       Hexadecimal 0x70 corresponds to the letter 'p'. So,
 Warmed Up:          Hexadecimal 0x3D corresponds to the decimal 61. So,
                     {required_flag} = picoCTF{61}
 
-2 Warm:             integer 42 corresponds to the binary 101010. So,
+2Warm:              integer 42 corresponds to the binary 101010. So,
                     {required_flag} = picoCTF{101010}
+
+what's a net cat?:  nc (url) (port), You will get the {required_flag}
 
 Tab, Tab, Attack:   Download zip file
                     Unzip using:
