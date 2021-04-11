@@ -12,5 +12,40 @@ Matryoksha Doll:    You need a Hex editor for this. I used ghex for this.
                         $ unzip (filename.zip)
                     It will show a new directory called base_images with another .jpg file, just like a matryoksha doll.
                     Rinse and repeat the process (about 4 times in my case).
-                    You will at last come uponn a text file with the answer in it.
+                    You will at last come uponn a text file with the {required_flag} in it.
                     If any character is unreadable just open the .txt in ghex.
+Glory of the Garden:
+                        $ strings garden.jph | grep pico
+                    You will get your (required_flag)
+                    
+So meta:            Go to metadata2go.com and insert this pic.
+
+extensions:         Try:
+                        $ file flag.txt
+                        flag.txt: PNG image data, 1697 x 608, 8-bit/color RGB, non-interlaced
+                    Even through its extension is a ,txt, it is an.png file.
+                    You can go through its HEX data it will also show PNG.
+                    Just rename the file and you get the {required_flag}
+                    
+WhitePages:         On trying
+                        $ file whitepages.txt
+                        whitepages.txt: UTF-8 Unicode text, with very long lines, with no line terminators
+                    So it us UTF8, but the page was blank. So either the charaacters were actual whitespaces or the ASCII were invalid.
+                    On converted them to ASCII 2 types of whitespaces were found:
+                        type1 = " "
+                        type2 = "  "
+                    So, I wrote a .py code to convert the code into binary (2 kinds of white spaces 1 and 0) using both permutations of types:
+                        s = '{given string}'
+                        type1 = " "
+                        type2 =  " "
+                        binstr = ""
+
+                        for c in s: 
+	                          if c == type1:
+		                            binstr += '1'
+	                           else:
+	                              binstr += '0'
+
+                        print(binstr)
+                        
+                      I copied the binstr and pasted it in an online binaty-to-ASCII editor and got the flag.
