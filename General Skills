@@ -85,7 +85,10 @@ First Grep:         Download file,
                         $ cat {filename} | grep picoCTF
                         {required_flag}
 
-
+Based:              Since the name is 'Based', we can conclude that it will probably give us values of different bases and tell us to convert them.
+                    On running the given netcat code we can see that it gives us text which has to be converted to plaintext.
+                    The most common bases are binary (base2), octal (base8), ASCII (base10) and hex (base16). Hence i created a python file which takes in the input and gives text output.
+                    
 
                     
                         
