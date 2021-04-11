@@ -2,3 +2,15 @@ information:        Download the .jpg
                     We need to first access its metadata to snif for interesting information. Go to exifinfo.org or metadata2go.com and upload the file.
                     Hmm the license looks kinda fishy... It looks like base64.
                     Go to any online decoder and paste the so-called license number. You will get the {required_flag}
+
+Matryoksha Doll:    You need a Hex editor for this. I used ghex for this.
+                    On downloading the picture and opening it in the hex editor, we can see that it is supposed to be a png image.
+                    In PNG inages the image starts with an IHDR and ends with an IEND. So search for the string IEND.
+                    We can see that just after IEND it shows ".PK..".
+                    Hence it can be verified that the bytes after IEND are supposed to be a pkzip file. 
+                    So, copy-paste all code starting from the PK into a new file and give it the extension .zip.
+                        $ unzip (filename.zip)
+                    It will show a new directory called base_images with another .jpg file, just like a matryoksha doll.
+                    Rinse and repeat the process (about 4 times in my case).
+                    You will at last come uponn a text file with the answer in it.
+                    If any character is unreadable just open the .txt in ghex.
