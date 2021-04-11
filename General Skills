@@ -16,7 +16,7 @@ Wave a Flag:        Download file.
                         # ./(fileneame) -h      # -h stands for help. For any binary in linux you can find a small version of its instruction manual using this.
                         Oh, help? I actually don't do much, but I do have this flag here: {required_flag}
 
-Nice  netcat...:    Use the given code snippet. Here, it runs netcat (nc) to access the website (mercury.picoctf.net) on port number (whatever number)
+Nice netcat...:     Use the given code snippet. Here, it runs netcat (nc) to access the website (mercury.picoctf.net) on port number (whatever number)
                     The output will seemingly be a column of numbers. Copy the numbers into a new textfile using:
                         $ (netcat code) > (filename).txt        # The > operator dumps output from the left hand side into the right. If the named file does not exist, a new empty file is created.
                     We then create a new python file in the same dorectory as that of the above (filename).txt:
@@ -26,6 +26,26 @@ Nice  netcat...:    Use the given code snippet. Here, it runs netcat (nc) to acc
                                                                         # map(chr,x) converts the integer elements into text
                                                                         # ''.join() joins all converted elements into a string
                         print ("Resultant string", str(res))            # Printing final string, which contains the {required_flag}
+
+Static ain't always noise:
+                    Download files.
+                        $ file static
+                        static: ELF 64-bit LSB shared object, x86-64, version 1 (SYSV), dynamically linked, ...
+                        $ file ltdis.sh
+                        ltdis.sh: Bourne-Again shell script, ASCII text executable
+                     In bash, $1 means the first argument passed into the script.
+                     On reading it using cat, we can see that it takes the first argument and disassembles it using objdump into a file called $1.ltdis.x86_64.txt.
+                     Then, it reads all availible strings in $1 and outputs them into a file called $1.ltdis.strings.txt.
+                     So first we will use ltdis.sh on the given ELF:
+                        $ ./ltdis.sh static
+                        Attempting disassembly of static ...
+                        Disassembly successful! Available at: static.ltdis.x86_64.txt
+                        Ripping strings from binary with file offsets...
+                        Any strings found in static have been written to static.ltdis.strings.txt with file offset
+                        
+                     Now, check the *.strings.txt file for our flag.
+                        $ cat (filename).strings.txt | grep pico
+                        {required_flag}
 
 Magikarp Ground Mission: 
                     Start instance and copy-paste connection info to terminal
