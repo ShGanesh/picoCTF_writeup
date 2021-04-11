@@ -1,11 +1,5 @@
 Obedient Cat:       Download and copy-paste the flag in the txt file.
 
-Mod 26:             Copy the given cyphertext, Create a python file:
-                          import codecs
-                          print(codecs.encode("given string", "rot_13"))
-                    Run file
-                    Output: {required_flag}.
-
 Python Wrangling:   Copy password from pw.txt
                     In terminal, do:
                         $ py ende.py -d flag.txt.en 
@@ -22,11 +16,6 @@ Wave a Flag:        Download file.
                         # ./(fileneame) -h      # -h stands for help. For any binary in linux you can find a small version of its instruction manual using this.
                         Oh, help? I actually don't do much, but I do have this flag here: {required_flag}
 
-information:        Download the .jpg
-                    We need to first access its metadata to snif for interesting information. Go to exifinfo.org or metadata2go.com and upload the file.
-                    Hmm the license looks kinda fishy... It looks like base64.
-                    Go to any online decoder and paste the so-called license number. You will get the {required_flag}
-
 Nice  netcat...:    Use the given code snippet. Here, it runs netcat (nc) to access the website (mercury.picoctf.net) on port number (whatever number)
                     The output will seemingly be a column of numbers. Copy the numbers into a new textfile using:
                         $ (netcat code) > (filename).txt        # The > operator dumps output from the left hand side into the right. If the named file does not exist, a new empty file is created.
@@ -37,9 +26,6 @@ Nice  netcat...:    Use the given code snippet. Here, it runs netcat (nc) to acc
                                                                         # map(chr,x) converts the integer elements into text
                                                                         # ''.join() joins all converted elements into a string
                         print ("Resultant string", str(res))            # Printing final string, which contains the {required_flag}
-
-Transformation:     Is is to is UTF-16BE? Not Known. Explanations and step by step procedures appreciated.
-
 
 Magikarp Ground Mission: 
                     Start instance and copy-paste connection info to terminal
