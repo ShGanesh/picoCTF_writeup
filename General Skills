@@ -93,5 +93,10 @@ plumbing:           Connect using given data and pipe.
                         $ nc (data given) | grep picoCTF
                         picoCTF{required_flag}
                     
+mus1c:              The text given is weird lyrics. In the hint it says: "Do you think you can master rockstar?" so I searched "rockstar programming".
+                    There is a programming language called rockstar.
+                    Go to your favourite web browser and go to any online rockstar interpreter and paste the lyrics in it. It will output many numbers line by line.
+                    Since we can observe that such numbers look line octals, write a code to convert octals to text and you will get your {required_flag}.
+
 
                         
