@@ -1,6 +1,8 @@
 '''
 So the problem lies with the binary file. On decompiling file with Ghidra we can see this weird code chunk:
 
+__stream_00 was initialized as flag.txt file. verifying this is left as an excercise to the reader. If you verify please comment.
+
 local_54 = 6;
 while (local_54 < 0xf) {
     fputc((int)(char)(local_38[local_54] + '\x05'),__stream_00);
