@@ -1,1 +1,4 @@
-Transformation:     Is is to is UTF-16BE? Not Known. Explanations and step by step procedures appreciated.
+Transformation:         Is this is UTF-16BE? Not Known. Explanations and step by step procedures appreciated.
+
+speeds and feeds:       CNC Machines use GCode. 
+                        Direct output to a text file, copy the content and paste it in https://ncviewer.com. Run it.
