@@ -61,7 +61,7 @@ Investigative Reversing 0:
 											
 											So the problem lies with the binary file. On decompiling file with Ghidra we can see this weird code chunk:
 													local_54 = 6;
-  												while (local_54 < 0xf) {
+													while (local_54 < 0xf) {
     													fputc((int)(char)(local_38[local_54] + '\x05'),__stream_00);
     													local_54 = local_54 + 1;
   												}
