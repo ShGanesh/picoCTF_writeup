@@ -68,7 +68,7 @@ Investigative Reversing 0:
   												fputc((int)(char)(local_29 + -3),__stream_00);
   												local_50 = 0x10;
   												while (local_50 < 0x1a) {
-    													fputc((int)local_38[local_50],__stream_00);
+    						 							fputc((int)local_38[local_50],__stream_00);
     													local_50 = local_50 + 1;
   												}
 
