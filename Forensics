@@ -58,7 +58,6 @@ Investigative Reversing 0:
 											Find IEND. We can see:
 													picoCTK{k5zsid6q_d1deedaaC}
 											Is this the {required_flag}? On submitting it we get a No!!!
-											The .py file for this is present in this repository.
 											
 											So the problem lies with the binary file. On decompiling file with Ghidra we can see this weird code chunk:
 													local_54 = 6;
@@ -72,5 +71,6 @@ Investigative Reversing 0:
     													fputc((int)local_38[local_50],__stream_00);
     													local_50 = local_50 + 1;
   												}
-											
+
+											Further explanation is given in the .py file that is present in this repository.
 											
