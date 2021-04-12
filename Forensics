@@ -49,3 +49,6 @@ WhitePages:         On trying
                         print(binstr)
                         
                       I copied the binstr and pasted it in an online binaty-to-ASCII editor and got the flag.
+		      
+like1000:							A .sh file has to be created in order to automate the repeated extraction and deletio of filler.txt, unless you are a either master of peristance or an android.
+											Bash file is present in this repository.
