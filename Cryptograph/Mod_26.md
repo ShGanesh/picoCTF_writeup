@@ -4,4 +4,3 @@ Mod 26:                 Copy the given cyphertext, Create a python file:
                         Run file
                         Output: {required_flag}.
 
-Mind your Ps and Qs:    
