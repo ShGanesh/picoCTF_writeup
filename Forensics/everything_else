@@ -1,7 +1,7 @@
-information:        Download the .jpg
-                    We need to first access its metadata to snif for interesting information. Go to exifinfo.org or metadata2go.com and upload the file.
-                    Hmm the license looks kinda fishy... It looks like base64.
-                    Go to any online decoder and paste the so-called license number. You will get the {required_flag}
+information:        Download the .jpg   
+                    We need to first access its metadata to snif for interesting information. Go to exifinfo.org or metadata2go.com and upload the file.   
+                    Hmm the license looks kinda fishy... It looks like base64.   
+                    Go to any online decoder and paste the so-called license number. You will get the {required_flag}   
 
 Matryoksha Doll:    You need a Hex editor for this. I used ghex for this.
                     On downloading the picture and opening it in the hex editor, we can see that it is supposed to be a png image.
@@ -72,5 +72,5 @@ Investigative Reversing 0:
 			    			local_50 = local_50 + 1;
 			  			}
 						```
-		      			Further explanation is given in the [.py file](/Investivative_reversing_0.py) that is present in this repository. 
+		      			Further explanation is given in the .py file that is present in this repository. 
 											
