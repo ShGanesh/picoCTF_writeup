@@ -3,5 +3,4 @@
 import codecs
 s = input("Given string: ")
 print(codecs.encode(s, "rot_13"))
-
 # Visit stackoverflow for more methods.
