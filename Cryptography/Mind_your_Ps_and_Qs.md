@@ -20,7 +20,7 @@ Next, we need to find the private key exponent d. d is computed by the congruenc
 `de ≅ 1 (mod ϕ(n))`, which is nothing but  
 `d = c**(-1) (mod (ϕ(n))` i.e: d is the multiplicative inverse of `d % ϕ(n)`.
 
-After finding d, we shapp apply the inverse RSA function.  
+After finding d, we shall apply the inverse RSA function.  
 I used Crypto.Util for inverse and converting long int to bytestring.  
 
 ```
